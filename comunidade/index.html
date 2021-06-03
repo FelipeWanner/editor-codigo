@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comunidade</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <div class="container">
+      <img class="logo-alura-dev" src="../img/Logo.png" alt="Logo da alura Dev">
+      <input class="barra-pesquisa barra-pesquisa__invisivel barra-pesquisa-js" placeholder="Busque por algo">
+      <div class="perfil-container invisivel">
+        <img class="foto-perfil" src="../img/Photo.png" alt="Logo da alura Dev">
+        <p>Harry</p>
+      </div>
+
+      <div class="lupa-container">
+        <div class="lupa-js lupa"></div>
+        <div class="abrir-menu invisivel-desktop menu-abre-fecha-js">
+        </div>
+      </div>
+    </div>
+
+    <!-- inicio do menu dinamico -->
+    <div class="menu-hamburguer menu-hamburguer__open invisivel menu-hamburguer-js">
+      <div class="menu-navegacao ">
+        <ul class="container">
+          <h2 class="menu-navegacao-titulo">MENU</h2>
+
+          <li class="botao-li">
+            <a class="botao-li__link" href="../editor-codigo/index.html">
+              <div class="menu__botao__botao-li">
+                <img src="../img/editor-codigo.png">
+              </div>
+              <p>Editor de código</p>
+            </a>
+          </li>
+
+          <li class="botao-li">
+            <a class="botao-li__link" href="#">
+              <div class="menu__botao__botao-li">
+                <img src="../img/Vector.png">
+              </div>
+              <p>Comunidade</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="perfil-container">
+        <img class="foto-perfil" src="../img/Photo.png" alt="Logo da alura Dev">
+        <p>Harry</p>
+      </div>
+    </div>
+    <!-- fim do menu dinamico -->
+  </header>
+
+  <main class="container-main">
+    <div class="menu-navegacao invisivel">
+      <ul class="container">
+        <h2 class="menu-navegacao-titulo">MENU</h2>
+
+        <li class="botao-li">
+          <a class="botao-li__link" href="../editor-codigo/index.html">
+            <div class="menu__botao__botao-li">
+              <img src="../img/editor-codigo.png">
+            </div>
+            <p>Editor de código</p>
+          </a>
+        </li>
+
+        <li class="botao-li">
+          <a class="botao-li__link" href="#">
+            <div class="menu__botao__botao-li">
+              <img src="../img/Vector.png">
+            </div>
+            <p>Comunidade</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <script src="../assets/hamburguer-menu.js"></script>
+  <script src="../assets/barra-pesquisa-mobile.js"></script>
+</body>
+
+</html>
