@@ -1,0 +1,590 @@
+/*CABECALHO #####################################################################################################*/
+
+body{
+  background-color: #051D3B;
+  font-family: 'Inter', sans-serif;
+}
+
+.cabecalho .container{
+  display: grid;
+  grid-template-areas: 
+    "primeira-coluna" /*primeira coluna*/
+    "segunda-coluna" /*coluna do meio*/
+    "terceira-coluna"; /*terceira coluna*/
+  grid-template-columns: 25% 50% 15% 10%;
+  grid-template-rows: auto auto;
+  margin: 4vh;
+}
+
+.logo-alura-dev{
+  grid-area: primeira-coluna;
+  grid-column: 1 / 2;
+  width: 50%;
+  height: 100%;
+  min-width: 85px;
+}
+
+.barra-pesquisa{
+  grid-area:segunda-coluna;
+  grid-column: 2 / 3;
+  grid-row-start: 1;
+  border-style: none;
+  border-radius: 8px;
+  width:100%; /*deve ser do mesmo tamanho da div central (que ainda não decidi se será flex-bos ou grid)*/
+   /*metade do padding do logo e com zero nas laterais*/
+  background-color: rgba(255, 255,255, .16);
+  font-size: 16px;
+  color:white;
+}
+
+.barra-pesquisa:hover{
+  background-color:rgba(255, 255,255, .24);
+}
+
+.barra-pesquisa::placeholder {
+  color:rgba(255, 255,255, .30);
+  padding-left:1.6%; /*deixa o placeholder com um espaçamento*/
+  font-family: 'Inter', sans-serif;
+}
+
+.perfil-container{
+  grid-area:terceira-coluna;
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 8vw;
+  color:white;
+}
+
+.foto-perfil{
+  height: 34px;
+}
+
+.menu-hamburguer{
+  display:none;
+}
+
+/*CORPO #####################################################################################################*/
+
+main {
+  margin: 4vh;
+  margin-top:1.5rem;
+  display:grid;
+  grid-template-areas: 
+    "menu-navegacao" /*primeira coluna*/
+    "editor" /*coluna do meio*/
+    "menu-lateral-direito"; /*terceira coluna*/
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto;
+}
+
+/*Grid esquerdo!*/
+.menu-navegacao{
+  grid-area: menu-navegacao;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-navegacao .container{
+  width:80%;
+  align-self: center;
+}
+
+.menu-navegacao-titulo{
+  color:white;
+  margin-bottom: .5rem;
+  font-size: 12px;
+  letter-spacing: .2rem;
+}
+
+.botao-li__link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  opacity: .16;
+  margin-bottom: .5rem;
+}
+
+.botao-li__link:hover, .botao-li__link:focus,  .botao-li__link:active{
+  opacity: 1; /*se o botao estiver ativo, com foco ou apenas com o cursor por cima, ele já ativa*/
+}
+
+.botao-li p{
+  color:white;
+  margin-left: 10px;
+  flex-shrink: 2;
+}
+
+.menu__botao__botao-li{
+  width:48px;
+  height:48px;
+  border-radius: 16px;
+  background-color: #5081FB;
+
+  display:flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menu__botao__botao-li img {
+  margin: auto auto;
+}
+
+/*fim grid esquerdo*/
+
+/*Grid direito*/
+
+.menu-lateral-direito .container{
+  width: 80%;
+  margin:auto;
+}
+
+.menu-lateral-direito{
+  grid-area:menu-lateral-direito;
+  grid-column: 3/4;
+  grid-row-start: 1;
+}
+
+.menu-lateral-direito h2{
+  color:white;
+  margin-bottom: .5rem;
+  font-size: 12px;
+  letter-spacing: .2rem;
+}
+
+.campo-nome-pojeto{
+  background-color: rgba(255, 255,255, .16);
+  color:white;
+  border-radius: 8px;
+  border-style: none;
+  min-height: 2rem;
+  margin-bottom: .5rem;
+  width: 100%;
+  font-size: 16px;
+  height: 56px;
+}
+
+.campo-nome-pojeto:hover{
+  background-color:rgba(255, 255,255, .24);
+}
+
+.campo-nome-pojeto::placeholder {
+  color:rgba(255, 255,255, .30);
+  padding-left:1.6%; /*deixa o placeholder com um espaçamento*/
+  font-family: 'Inter', sans-serif;
+}
+
+.campo-descricao{
+  background-color: rgba(255, 255,255, .16);
+  color:white;
+  border-radius: 8px;
+  border-style: none;
+  min-height: 80px;
+  min-width: 4rem;
+  margin-bottom: .5rem;
+  width: 100%;
+  height:3rem;
+  font-size: 16px;
+  resize: none;
+}
+
+.campo-descricao:hover{
+  background-color:rgba(255, 255,255, .24);
+}
+
+.campo-descricao::placeholder {
+  color:rgba(255, 255,255, .30);
+  padding-left:1.6%; /*deixa o placeholder com um espaçamento*/
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.personalização{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  /*classe que deixa um espaço entre a descricao e a personalizacao*/
+}
+
+.selecao-linguagem{
+  background-color: rgba(255, 255,255, .16);
+  border-radius: 8px;
+  border-style: none;
+  width: 100%;
+  height: 56px;
+  color:rgba(255, 255,255, .30);
+  margin-bottom: .5rem;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.selecao-linguagem:hover, .selecao-linguagem:focus{
+  outline: none;
+  cursor: pointer;
+  background-color:rgba(255, 255,255, .24);
+}
+
+.selecao-linguagem option{
+  color:rgb(0, 0,0);
+  /*essa classe serve apenas para mudar a cor das letras de cada opcao do select*/
+}
+
+.color-picker{
+  box-sizing: border-box;
+  background-color: #051D3B;
+  border-radius: 8px;
+  width: 100%;
+  height: 56px;
+}
+
+.color-picker:hover, .color-picker:focus{
+  cursor: pointer;
+}
+
+.botao-salvar-projeto{
+  background-color:#5081FB;
+  border-radius: 8px;
+  margin: 1rem 0;
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+  border-style: none;
+  font-size: 16px;
+}
+
+.botao-salvar-projeto:hover{
+  background-color: #7BA4FC;
+}
+
+.botao-salvar-projeto:active{
+  border: 4px solid #5081FB;
+}
+
+.botao-salvar-projeto:focus{
+  background-color: #96B9FD;
+}
+
+/*Fim do Grid direito*/
+
+/*Grid central*/
+
+
+.editor-codigo__borda{
+  box-sizing: border-box;
+  grid-area: editor;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  border-radius: 8px;
+  border: solid 25px #6BD1FF;
+  background-color: #6BD1FF;
+  /*a função dessa classe é fazer uma borda atrás do editor de código. Isso se tornou necessário, pq 
+  com uma borda desse tamanho, a borda interna (as pontas da parte preta do editor) ficariam retas*/
+}
+
+.editor-codigo__barra-circulos{
+  box-sizing: border-box;
+  background-color: #141414;
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  border: solid 5px #141414;
+  /*essa classe serve para fazer um fundo preto que engloba a imagem do editor do mac, e o textarea*/
+}
+
+
+.editor-codigo__canvas{
+  box-sizing: border-box; 
+  color:white;
+  border-style: none;
+  background-color: #141414;
+  height: 306px;
+  max-width: 100%;
+  min-width: 100%;
+  resize: none; /*impossibilita o usuario de aumentar o editor*/
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+}
+
+.editor-codigo__botao-syntax-highlight{
+  margin-top:1.5rem;
+  background-color: rgba(80, 129, 251, 0.08);
+  color:white;
+  border-style: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+}
+
+.editor-codigo__botao-syntax-highlight:hover{
+  background-color:rgba(80, 129, 251, 0.16);
+}
+
+.editor-codigo__botao-syntax-highlight:active{
+  background-color:rgba(80, 129, 251, 0.16);
+  border: 4px solid rgba(80, 129, 251, 0.24);
+}
+
+.editor-codigo__botao-syntax-highlight:focus{
+  background-color:rgba(80, 129, 251, 0.24);;
+}
+
+.invisivel-desktop{
+  display:none;
+}
+
+/*fim Grid central*/
+
+/*RESPONSIVO*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+  .cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .invisivel{
+    display: none;
+  }
+
+  .menu-container-tablet{
+    width: 30%;
+  }
+
+  .logo-alura-dev{
+    width: auto;
+    height: auto;
+  }
+
+  .barra-pesquisa{
+    width:50%;
+    height: 35px;
+    margin: 0 1rem;
+  }
+
+  .barra-pesquisa__invisivel{
+    display: none;
+  }
+
+  .lupa-container{
+    display: flex;
+    justify-content: space-between;
+    width: 65px;
+  }
+
+  .lupa{
+    background-image: url("../img/lupinha.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  .lupaX{
+    background-image: url("../img/fechar-menu.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  .abrir-menu{
+    background-image: url("../img/abrir-menu.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    /*essa classe serve para quando menu estiver fechado, ter a imagem dos hamburgueres*/
+  }
+
+  .fechar-menu{
+    background-image: url("../img/fechar-menu.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    /*essa classe serve para quando menu estiver fechado, ter a imagem de um "X"*/
+  }
+
+  .menu-hamburguer {
+    display: inline;
+    background-color: #2D415B;
+    border-radius:8px;
+    position:absolute;
+    right:0;
+    margin: 0 4vh; /*mesma margin do cabeçalho, para se manter alinhado a imagem do menu*/
+    transition: linear 200ms;
+  }
+
+  .menu-hamburguer__open{
+    height: 50vh;
+    width: 250px;
+  }
+
+  .menu-hamburguer__close{
+    height: 0;
+    width: 0;
+  }
+
+  .menu-navegacao .container{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+  }
+
+  .perfil-container{
+    margin-left:3vw;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0 0 0;
+  }
+
+  .editor-codigo{
+    order:-1;
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .menu-lateral-direito .container{
+    width: 85vw;
+    margin-top:2rem;
+  }
+
+  .coluna-responsivo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .color-picker{
+    width: 100%;
+  }
+
+  .selecao-linguagem{
+    width: 100%;
+  }
+
+  .invisivel{
+    display: none;
+  }
+
+  .invisivel-desktop{
+    display: inherit;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)  and (max-width:991px){
+
+  .cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .invisivel{
+    display: none;
+  }
+
+  .menu-container-tablet{
+    width: 30%;
+  }
+
+  .logo-alura-dev{
+    width: auto;
+    height: auto;
+  }
+
+  .barra-pesquisa{
+    width:50%;
+    height: auto;
+  }
+
+  .abrir-menu{
+    background-image: url("../img/abrir-menux2.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    /*essa classe serve para quando menu estiver fechado, ter a imagem dos hamburgueres*/
+  }
+
+  .fechar-menu{
+    background-image: url("../img/fechar-menux2.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    /*essa classe serve para quando menu estiver fechado, ter a imagem de um "X"*/
+  }
+
+  .menu-hamburguer {
+    display: inline;
+    background-color: #2D415B;
+    border-radius:8px;
+    position:absolute;
+    right:0;
+    margin: 0 4vh; /*mesma margin do cabeçalho, para se manter alinhado a imagem do menu*/
+    transition: linear 200ms;
+  }
+
+  .menu-hamburguer__open{
+    height: 50vh;
+    width: 250px;
+  }
+
+  .menu-hamburguer__close{
+    height: 0;
+    width: 0;
+  }
+
+  .menu-navegacao .container{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+  }
+
+  .perfil-container{
+    margin-left:3vw;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0 0 0;
+  }
+
+  .editor-codigo{
+    order:-1;
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .menu-lateral-direito .container{
+    width: 85vw;
+    margin-top:2rem;
+  }
+
+  .coluna-responsivo{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .color-picker{
+    width: 49%;
+  }
+
+  .selecao-linguagem{
+    width: 49%;
+  }
+
+  .invisivel{
+    display: none;
+  }
+
+  .invisivel-desktop{
+    display: inherit;
+  }
+}
