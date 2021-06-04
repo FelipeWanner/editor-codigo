@@ -1,0 +1,51 @@
+.menu-navegacao{
+  grid-area: menu-navegacao;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-navegacao .container{
+  width:80%;
+  align-self: center;
+}
+
+.menu-navegacao-titulo{
+  color:white;
+  margin-bottom: .5rem;
+  font-size: 12px;
+  letter-spacing: .2rem;
+}
+
+.botao-li__link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  opacity: .16;
+  margin-bottom: .5rem;
+}
+
+.botao-li__link:hover, .botao-li__link:focus,  .botao-li__link:active{
+  opacity: 1; /*se o botao estiver ativo, com foco ou apenas com o cursor por cima, ele já ativa*/
+}
+
+.botao-li p{
+  color:white;
+  margin-left: 10px;
+  flex-shrink: 2;
+}
+
+.menu__botao__botao-li{
+  width:48px;
+  height:48px;
+  border-radius: 16px;
+  background-color: #5081FB;
+
+  display:flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menu__botao__botao-li img {
+  margin: auto auto;
+}
