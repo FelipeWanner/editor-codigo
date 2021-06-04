@@ -380,21 +380,21 @@ main {
   }
 
   .lupa{
-    background-image: url("../img/lupinha.png");
+    background-image: url("./img/lupinha.png");
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
   }
 
   .lupaX{
-    background-image: url("../img/fechar-menu.png");
+    background-image: url("./img/fechar-menu.png");
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
   }
 
   .abrir-menu{
-    background-image: url("../img/abrir-menu.png");
+    background-image: url("./img/abrir-menu.png");
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
@@ -402,7 +402,7 @@ main {
   }
 
   .fechar-menu{
-    background-image: url("../img/fechar-menu.png");
+    background-image: url("./img/fechar-menu.png");
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
@@ -505,7 +505,7 @@ main {
   }
 
   .abrir-menu{
-    background-image: url("../img/abrir-menux2.png");
+    background-image: url("./img/abrir-menux2.png");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -513,7 +513,7 @@ main {
   }
 
   .fechar-menu{
-    background-image: url("../img/fechar-menux2.png");
+    background-image: url("./img/fechar-menux2.png");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
