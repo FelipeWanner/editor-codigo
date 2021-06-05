@@ -178,6 +178,8 @@ main {
 
 
 .editor-codigo__canvas{
+  display:block;
+  white-space: pre-wrap;
   box-sizing: border-box; 
   color:white;
   border-style: none;
