@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/cabecalho.css">
   <link rel="stylesheet" href="./assets/css/menu-lateral-esquerdo.css">
+  <link rel="stylesheet" href="./assets/css/shades-of-purple.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -47,8 +48,8 @@
           </li>
 
           <li class="botao-li">
-            <a class="botao-li__link" href="https://felipewanner.github.io/editor-codigo/comunidade/">
-              <!-- <a class="botao-li__link" href="./comunidade/"> -->
+            <!-- <a class="botao-li__link" href="https://felipewanner.github.io/editor-codigo/comunidade/"> -->
+              <a class="botao-li__link" href="./comunidade/">
               <div class="menu__botao__botao-li">
                 <img src="./img/Vector.png">
               </div>
@@ -80,8 +81,8 @@
         </li>
 
         <li class="botao-li">
-          <a class="botao-li__link" href="https://felipewanner.github.io/editor-codigo/comunidade/">
-            <!-- <a class="botao-li__link" href="./comunidade/index.html"> -->
+          <!-- <a class="botao-li__link" href="https://felipewanner.github.io/editor-codigo/comunidade/"> -->
+            <a class="botao-li__link" href="./comunidade/index.html">
             <div class="menu__botao__botao-li">
               <img src="./img/Vector.png">
             </div>
@@ -104,10 +105,10 @@
           <h2>PERSONALIZAÇÃO</h2>
           <label for="selecao-linguagens"></label>
           <div class="coluna-responsivo">
-            <select class="selecao-linguagem" id="selecao-linguagem" name="selecao-linguagem">
+            <select class="selecao-linguagem" id="selecao-linguagem-js" name="selecao-linguagem">
               <option selected value="JavaScript">JavaScript</option>
               <option value="HTML">HTML</option>
-              <option value="HTML">CSS</option>
+              <option value="CSS">CSS</option>
             </select>
 
             <input class="color-picker" type="color" value="#6BD1FF">
@@ -122,17 +123,24 @@
       <div class="editor-codigo__borda">
         <div class="editor-codigo__barra-circulos">
           <img src="./img/mac_buttons.svg">
-          <code class="editor-codigo__canvas"></code>
+          <div class="editor-codigo-js">
+            <code class="editor-codigo__canvas hljs" contenteditable="true" aria-label="editor"></code>
+          </div>
         </div>
       </div>
 
-      <button class="editor-codigo__botao-syntax-highlight">Visualizar com o highlight</button>
+      <button class="editor-codigo__botao-syntax-highlight botao-syntax-highlight-js">Visualizar com o highlight</button>
 
     </div>
   </main>
 
   <script src="./assets/js/hamburguer-menu.js"></script>
   <script src="./assets/js/barra-pesquisa-mobile.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script> -->
+  <!-- A LINHA COMENTADA SERVE PARA IMPORTAR O HIGHLIGHT.JS DE FORMA ONLINE. MAS EU PREFERI IMPORTAR UM ARQUIVO
+  PARA GARANTIR QUE O PROJETO FUNCIONE MESMO QUE O SITE DELES FIQUE FORA DO AR -->
+  <script src="./assets/js/highlight-v11.0.1.js"></script>
+  <script src="./assets/js/highlight-muda-linguagem.js"></script>
 </body>
 
 </html>
