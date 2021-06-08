@@ -7,11 +7,11 @@ Acesse o Alura Dev atravéz do [link](https://felipewanner.github.io/editor-codi
 
 ## Índice: 
 
-* 👉 [Como utilizar o editor](#Como-utilizar-o-editor:)
-* 👉 [Como rodar o projeto:](#Como-rodar-o-projeto:)
+* 👉 [Como utilizar o editor](#Como-utilizar-o-editor)
+* 👉 [Como rodar o projeto](#Como-rodar-o-projeto)
 * 👉 [Screenshot](#Screenshot)
 * 👉 [O que é o Alura Challenge?](#O-que-é-o-Alura-Challenge?)
-* 👉 [Tecnologias utilizadas](#Tecnologias-utilizadas:)
+* 👉 [Tecnologias utilizadas](#Tecnologias-utilizadas)
 * 👉 [Ainda não é o fim!](#Ainda-não-é-o-fim!)
 
 ## Como utilizar o editor:
@@ -34,7 +34,7 @@ Depois de clonar o repositório, você pode rodar o projeto localmente de 2 form
 
   1ª: Abra seu navegador, e pressione `ctrl + O`, encontre a pasta que salvou o projeto e abra o arquivo "index.html" na pasta root do projeto.
 
-  2ª: Se o seu editor de texto for o [Visual Studio Code](https://code.visualstudio.com/), baixe a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), abra o arquivo "index.html" na pasta root e clique em "live-server".
+  2ª: Se o seu editor de texto for o [Visual Studio Code](https://code.visualstudio.com/), baixe a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), abra o arquivo "index.html" da pasta root no seu VSCode e clique em "live-server".
 
 ## Screenshot
 
