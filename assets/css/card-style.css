@@ -1,0 +1,100 @@
+.card-container{
+  grid-area: cards;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.editor-codigo{
+  margin-bottom: 3vh;
+}
+
+.editor-codigo__borda{
+  box-sizing: border-box;
+  grid-column: 2 / 3;
+  border-radius: 8px;
+  border: solid 25px #6BD1FF;
+  background-color: #6BD1FF;
+  /*a função dessa classe é fazer uma borda atrás do editor de código. Isso se tornou necessário, pq 
+  com uma borda desse tamanho, a borda interna (as pontas da parte preta do editor) ficariam retas*/
+}
+
+.editor-codigo__barra-circulos{
+  box-sizing: border-box;
+  background-color: #141414;
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  border: solid 5px #141414;
+  /*essa classe serve para fazer um fundo preto que engloba a imagem do editor do mac, e o textarea*/
+}
+
+.editor-codigo__canvas{
+  display:block;
+  white-space: pre-wrap;
+  box-sizing: border-box; 
+  color:white;
+  border-style: none;
+  background-color: #141414;
+  height: 240px;
+  width: 28vw;
+  resize: none; /*impossibilita o usuario de aumentar o editor*/
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+}
+
+.editor-codigo__informacoes{
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(0, 0, 0, 0.16);
+  padding: 3vh 2vw;
+  color:#FFFFFF;
+}
+
+.editor-codigo__informacoes__titulo{
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.editor-codigo__informacoes__descricao{
+  font-size: 16px;
+  line-height: 24px;
+  margin: 8px 0px;
+}
+
+.editor-codigo__informacoes__container{
+  display: none;
+}
+
+.editor-codigo__informacoes:hover .editor-codigo__informacoes__container, .editor-codigo__informacoes:active .editor-codigo__informacoes__container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+
+.editor-codigo__informacoes__curtidas-container, .editor-codigo__informacoes__usuario-container{
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.editor-codigo__informacoes__usuario-container__foto-perfil{
+  height: 24px;
+}
+
+@media only screen and (max-width:991px){
+
+  .editor-codigo{
+    margin: 3vh auto;
+  }
+
+  .editor-codigo__borda{
+    width: 90vw;
+    max-width: 700px;
+  }
+}
