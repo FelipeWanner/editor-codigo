@@ -41,7 +41,7 @@ function montaCard(projeto) {
     <div class="editor-codigo" data-id="${projeto.id}">
       <div class="editor-codigo__borda" style="background-color:${projeto.detalhes.corDaBorda}; border-color:${projeto.detalhes.corDaBorda};">
         <div class="editor-codigo__barra-circulos">
-          <img src="../../img/mac_buttons.svg">
+          <img src="../img/mac_buttons.svg">
           <div class="editor-codigo-js">
             <code class="editor-codigo__canvas hljs ${projeto.detalhes.linguagem}" contenteditable="false" aria-label="editor"></code>
           </div>
