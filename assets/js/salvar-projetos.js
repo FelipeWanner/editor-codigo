@@ -9,7 +9,7 @@ $botaoSalvar.addEventListener("click", () => {
   if (typeof(Storage) !== "undefined"){
     const projeto = montaProjeto()
     salvarProjetoNoLocalStorage(projeto)
-    console.log(projeto)
+    limpaCampos()
   } else if (typeof(Storage) === "undefined"){
     alert("infelizmente o seu navegador não suporta o Local-Storage, e não será possível salvar o projeto")
   }
@@ -48,3 +48,10 @@ function salvarProjetoNoLocalStorage(objetoJson){
 
     4º : para limpar o localStoraga, no console do navegador, chamamos a funcao localStorage.clear()
 */
+
+function limpaCampos() {
+  $tituloDoProjeto.value = ""
+  $descricaoDoProjeto.value = ""
+  $codigo.innerText = ""
+  $linguagem.value = "JavaScript"
+}
