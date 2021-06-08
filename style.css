@@ -6,7 +6,7 @@ body{
 /*CORPO #####################################################################################################*/
 
 main {
-  margin: 4vh;
+  margin: 8vh;
   margin-top:1.5rem;
   display:grid;
   grid-template-areas: 
@@ -20,8 +20,8 @@ main {
 /*Grid direito*/
 
 .menu-lateral-direito .container{
-  width: 80%;
-  margin:auto;
+  width: 90%;
+  margin-left:auto;
 }
 
 .menu-lateral-direito{
@@ -189,6 +189,7 @@ main {
   min-width: 100%;
   resize: none; /*impossibilita o usuario de aumentar o editor*/
   font-size: 14px;
+  font-weight: 600;
   line-height: 18px;
   outline: none;
 }

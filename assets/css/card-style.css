@@ -39,9 +39,10 @@
   border-style: none;
   background-color: #141414;
   height: 240px;
-  width: 28vw;
+  width: 26vw;
   resize: none; /*impossibilita o usuario de aumentar o editor*/
   font-size: 14px;
+  font-weight: 600;
   line-height: 18px;
   outline: none;
 }

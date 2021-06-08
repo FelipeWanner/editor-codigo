@@ -6,7 +6,7 @@ body{
 /*CORPO #####################################################################################################*/
 
 main {
-  margin: 4vh;
+  margin: 8vh;
   margin-top:1.5rem;
   display:grid;
   grid-template-areas: 

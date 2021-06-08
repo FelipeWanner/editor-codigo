@@ -9,7 +9,7 @@
  .hljs {
   background: #2d2b57;
   color: #e3dfff;
-  font-weight: normal;
+  font-weight:600;
 }
 
 .hljs-subst {
@@ -18,7 +18,7 @@
 
 .hljs-title {
   color: #fad000;
-  font-weight: normal;
+  font-weight:600;
 }
 
 .hljs-name {
@@ -74,7 +74,7 @@
 .hljs-literal,
 .hljs-name,
 .hljs-strong {
-  font-weight: normal;
+  font-weight:600;
 }
 
 .hljs-literal,
@@ -87,5 +87,5 @@
 }
 
 .hljs-strong {
-  font-weight: bold;
+  font-weight:600;
 }
