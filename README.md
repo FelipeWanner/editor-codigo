@@ -7,12 +7,12 @@ Acesse o Alura Dev atravéz do [link](https://felipewanner.github.io/editor-codi
 
 ## Índice: 
 
-* 👉 [Como utilizar o editor](#Como-utilizar-o-editor)
-* 👉 [Como rodar o projeto](#Como-rodar-o-projeto)
-* 👉 [Screenshot](#Screenshot)
-* 👉 [O que é o Alura Challenge?](#O-que-é-o-Alura-Challenge?)
+* 👉 [Como utilizar o editor](#Como-utilizar-o-editor) 1
+* 👉 [Como rodar o projeto](#Como-rodar-o-projeto) 1
+* 👉 [Screenshot](#Screenshot) 1
+* 👉 [O que é o Alura Challenge?](#O-que-é-o-Alura-Challenge)
 * 👉 [Tecnologias utilizadas](#Tecnologias-utilizadas)
-* 👉 [Ainda não é o fim!](#Ainda-não-é-o-fim!)
+* 👉 [Ainda não é o fim!](#Ainda-não-é-o-fim)
 
 ## Como utilizar o editor:
 
