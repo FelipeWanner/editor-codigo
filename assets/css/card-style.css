@@ -40,6 +40,7 @@
   background-color: #141414;
   height: 240px;
   width: 26vw;
+  max-width: 26vw;
   resize: none; /*impossibilita o usuario de aumentar o editor*/
   font-size: 14px;
   font-weight: 600;
@@ -52,6 +53,7 @@
   background-color: rgba(0, 0, 0, 0.16);
   padding: 3vh 2vw;
   color:#FFFFFF;
+  max-width: calc(26vw + 25px); /* tamanho do editor + tamanho da borda externa*/
 }
 
 .editor-codigo__informacoes__titulo{
