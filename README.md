@@ -52,6 +52,8 @@ Mas não apenas isso, durante o challenge, os alunos tiveram que utilizar outras
 * CSS3
 * JavaScript
 
+* [Highlight.js](https://highlightjs.org/): Biblioteca JS responsável por aplicar o highlight ao editor!
+
 ### Ainda não é o fim! ⚠️
 
 Ainda pretendo alterar o projeto e adicionar novas features, como: 
