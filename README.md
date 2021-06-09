@@ -40,6 +40,9 @@ Depois de clonar o repositório, você pode rodar o projeto localmente de 2 form
 
 ![Captura da tela inicial do site](./img/captura.PNG)
 
+
+![Captura da tela da pagina Comunidade](./img/screenshot-comunidade.PNG)
+
 ## O que é o Alura Challenge? 🤔
 
 Este projeto surgiu através do Alura Challenge - Edição Front-End.
