@@ -43,13 +43,12 @@ Depois de clonar o repositório, você pode rodar o projeto localmente de 2 form
 
 ![Captura da tela da pagina Comunidade](./img/screenshot-comunidade.PNG)
 
-## O que é o Alura Challenge? 🤔
-
+<h2>O que é o Alura Challenge?</h2>🤔
 Este projeto surgiu através do Alura Challenge - Edição Front-End.
 A ideia deste challenge é preparar o aluno para o mercado de trabalho, ao desafiar a criação da parte front-end de um site, utilizando as ferramentas clássicas do front-end como HTML, CSS e JS.
 Mas não apenas isso, durante o challenge, os alunos tiveram que utilizar outras ferramentas, como o [Trello](https://trello.com/b/19ouy4RA/desafio-front-end-semana-1), [Figma](https://www.figma.com/file/Ve4hpTfmMa7yAFneoGtGKD/Alura-Challenge---Edi%C3%A7%C3%A3o-Front-end?node-id=207%3A729&viewport=86%2C-1148%2C0.3736729025840759) e reuniões com os colegas através do Discord.
 
-## Tecnologias utilizadas: ⚒️
+<h2>Tecnologias utilizadas:</h2>⚒️
 
 * HTML5
 * CSS3
@@ -57,7 +56,7 @@ Mas não apenas isso, durante o challenge, os alunos tiveram que utilizar outras
 
 * [Highlight.js](https://highlightjs.org/): Biblioteca JS responsável por aplicar o highlight ao editor!
 
-### Ainda não é o fim! ⚠️
+<h3>Ainda não é o fim!</h3> ⚠️
 
 Ainda pretendo alterar o projeto e adicionar novas features, como: 
 
