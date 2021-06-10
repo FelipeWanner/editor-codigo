@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5vw 8vw;
   }
 
   .invisivel{
@@ -85,16 +86,14 @@
     width: 0;
   }
 
-  .menu-navegacao .container{
-    display: flex;
-    flex-wrap: wrap;
+  .menu-navegacao .container-menu{
     border-bottom: 1px solid rgba(255, 255, 255, .08);
+    margin:1rem 0 0 1rem;
   }
 
   .perfil-container{
-    margin-left:3vw;
+    margin:1rem 0 0 1rem;
   }
-
 
   main{
     display: flex;
@@ -117,6 +116,7 @@
   .cabecalho .container{
     display: flex;
     justify-content: space-between;
+    margin: 5vw 8vw;
   }
 
   .invisivel{
@@ -173,14 +173,13 @@
     width: 0;
   }
 
-  .menu-navegacao .container{
-    display: flex;
-    flex-wrap: wrap;
+  .menu-navegacao .container-menu{
     border-bottom: 1px solid rgba(255, 255, 255, .08);
+    margin:1rem 0 0 1rem;
   }
 
   .perfil-container{
-    margin-left:3vw;
+    margin:1rem 0 0 1rem;
   }
 
   main{

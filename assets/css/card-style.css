@@ -90,14 +90,47 @@
   height: 24px;
 }
 
-@media only screen and (max-width:991px){
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card-container{
+    flex-direction: column;
+    margin:auto;
+    width: 90%;
+  }
+
+  .editor-codigo__borda{
+    width: 100%;
+    border: solid 15px #6BD1FF;
+  }
+
+  .editor-codigo__canvas{
+    width:100%;
+    max-width: 90vw;
+  }
+
+  .editor-codigo__informacoes{
+    max-width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)  and (max-width:991px){
+  .card-container{
+    flex-direction: column;
+    width: 90vw;
+    margin:auto;
+  }
 
   .editor-codigo{
     margin: 3vh auto;
   }
 
-  .editor-codigo__borda{
-    width: 90vw;
-    max-width: 700px;
+  .editor-codigo__canvas{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .editor-codigo__informacoes{
+    max-width: 100%; /* tamanho do editor (canvas) + o tamanho*/
   }
 }

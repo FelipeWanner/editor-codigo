@@ -15,7 +15,6 @@ function montaProjetos() {
     listaDeProjetos.push(JSON.parse(localStorage.getItem(i)))
   }
 
-  console.log(listaDeProjetos)
   listaDeProjetos.forEach((projeto) => {
     const criaCard = montaCard(projeto)
     $cardContainer.innerHTML += criaCard
@@ -36,7 +35,6 @@ que queremos (nesse caso, nossos cards tem os seus id como numeros, portanto, si
  */
 
 function montaCard(projeto) {
-  console.log(projeto.id)
   let card = `
     <div class="editor-codigo" data-id="${projeto.id}">
       <div class="editor-codigo__borda" style="background-color:${projeto.detalhes.corDaBorda}; border-color:${projeto.detalhes.corDaBorda};">
