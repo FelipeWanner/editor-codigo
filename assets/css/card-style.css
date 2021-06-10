@@ -125,6 +125,10 @@
     margin: 3vh auto;
   }
 
+  .editor-codigo__borda{
+    width: 90vw;
+  }
+
   .editor-codigo__canvas{
     width: 100%;
     max-width: 100%;
