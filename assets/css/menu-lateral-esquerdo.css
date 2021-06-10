@@ -24,7 +24,7 @@
   margin-bottom: .5rem;
 }
 
-.botao-li__link:hover, .botao-li__link:focus,  .botao-li__link:active{
+.botao-li__link:hover, .botao-li__link:focus,  .botao-li__link:active, .botao-li__link__ativo{
   opacity: 1; /*se o botao estiver ativo, com foco ou apenas com o cursor por cima, ele já ativa*/
 }
 
