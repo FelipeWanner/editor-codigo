@@ -30,6 +30,10 @@
     display: none;
   }
 
+  .barra-pesquisa__largura-total{
+    width: 100%;
+  }
+
   .lupa-container{
     display: flex;
     justify-content: space-between;
